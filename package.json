@@ -2,11 +2,15 @@
   "name": "editor-full-fixed",
   "version": "1.0.0",
   "private": true,
+{
   "scripts": {
-    "dev": "vite",
-    "start": "npm run dev",         // ← 新增这一行
-    "build": "vite build"
-  },
+    "dev": "vite --host",          // 开启 host 监听
+    "start": "npm run dev",        // StackBlitz 会执行 npm start
+    "build": "vite build",
+    "electron:dev": "cross-env NODE_ENV=development electron .",
+    "electron:build": "npm run build && electron-builder"
+  }
+}
   "dependencies": {
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
