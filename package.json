@@ -4,11 +4,10 @@
   "private": true,
 {
   "scripts": {
-    "dev": "vite --host",          // 开启 host 监听
-    "start": "npm run dev",        // StackBlitz 会执行 npm start
+    "dev": "vite --host",      // ← add --host
+    "start": "npm run dev",
     "build": "vite build",
-    "electron:dev": "cross-env NODE_ENV=development electron .",
-    "electron:build": "npm run build && electron-builder"
+    ...
   }
 }
   "dependencies": {
