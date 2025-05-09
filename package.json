@@ -4,6 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "vite",
+    "start": "npm run dev",         // ← 新增这一行
     "build": "vite build"
   },
   "dependencies": {
